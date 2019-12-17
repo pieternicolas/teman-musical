@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import ReactDOM from 'react-dom';
+import { Helmet } from 'react-helmet';
 
 import Root from 'config/Root';
 
@@ -9,7 +10,13 @@ import * as serviceWorker from './serviceWorker';
 
 const render = (Component: FC) => {
   ReactDOM.render(
-    <Component />,
+    <>
+      <Helmet>
+        <title>Teman Musicals</title>
+      </Helmet>
+
+      <Component />
+    </>,
     document.getElementById('root')
   );
 };
