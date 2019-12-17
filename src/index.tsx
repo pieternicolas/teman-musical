@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 
 import Root from 'config/Root';
 
+import 'assets/styles/index.css';
+
 import * as serviceWorker from './serviceWorker';
 
 const render = (Component: FC) => {
