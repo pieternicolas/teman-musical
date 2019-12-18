@@ -1,11 +1,10 @@
-import React, { FC, ReactType } from 'react';
-import { Route } from 'react-router-dom';
+import React, { FC } from 'react';
+import { Route, RouteProps, RouteComponentProps } from 'react-router-dom';
 
 import Nav from 'containers/Nav';
 
-interface DefaultLayoutProp {
-  component: ReactType;
-  path: string | string[];
+interface DefaultLayoutProp extends RouteProps {
+  component: FC<RouteComponentProps>;
 };
 
 const DefaultLayout: FC<DefaultLayoutProp> = ({
