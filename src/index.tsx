@@ -1,9 +1,11 @@
 import React, { FC } from 'react';
 import ReactDOM from 'react-dom';
 import { Helmet } from 'react-helmet';
+import { ThemeProvider } from 'styled-components';
 
 import Root from 'config/Root';
 
+import theme from 'assets/theme';
 import 'assets/styles/index.scss';
 
 import * as serviceWorker from './serviceWorker';
@@ -15,7 +17,9 @@ const render = (Component: FC) => {
         <title>Teman Musicals</title>
       </Helmet>
 
-      <Component />
+      <ThemeProvider theme={theme}>
+        <Component />
+      </ThemeProvider>
     </>,
     document.getElementById('root')
   );

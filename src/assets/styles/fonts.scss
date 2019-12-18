@@ -1,0 +1,5 @@
+@include font-face(PixelOperator, '../fonts/PixelOperator', null, null, ttf);
+@include font-face(PixelOperatorBold, '../fonts/PixelOperator-Bold', null, null, ttf);
+
+.font-pixel { font-family: PixelOperator !important; }
+.font-pixel-bold { font-family: PixelOperatorBold !important; }
