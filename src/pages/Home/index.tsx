@@ -7,12 +7,13 @@ import Image from 'react-bootstrap/Image';
 
 import FlipCard from 'components/FlipCard';
 
+import DirectorSection from 'pages/Home/DirectorSection';
+
 import useMedia from 'helpers/hooks/useMedia';
 
 import actorsData, { Actor } from 'assets/data/actors';
 import HairsprayHeroImg from 'assets/img/hairspray-hero.gif';
 
-// const actorsDataXs: Actor[][] = [[actorsData[0], actorsData[1], actorsData[2]], [actorsData[3], actorsData[4], actorsData[5], actorsData[6]], [actorsData[7], actorsData[8], actorsData[9]]];
 const actorsDataXs: Actor[][] = _chunk(actorsData, 5);
 const actorsDataMd: Actor[][] = _chunk(actorsData, 2);
 
@@ -27,6 +28,8 @@ const Home: FC = () => {
       <div className="d-flex justify-content-center margin-top-20">
         <Image className="text-center mw-100" src={HairsprayHeroImg}/>
       </div>
+
+      <DirectorSection/>
 
       <div className="d-flex margin-top-30">
         {activeActorsData.map((item: Actor[], i: number) => (

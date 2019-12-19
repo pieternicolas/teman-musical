@@ -5,6 +5,7 @@ const green = '#1E9C9A';
 const orange = '#F59C3F';
 const pink = '#EB6BA2';
 const purple = '#917CB4';
+const white = '#FFFFFF';
 
 const screenXl = '1440px';
 const screenLgMax = '1439px';
@@ -22,6 +23,7 @@ const theme: DefaultTheme = {
     orange,
     pink,
     purple,
+    white,
   },
   screenLg,
   screenLgMax,
