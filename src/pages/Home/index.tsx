@@ -8,11 +8,13 @@ import Image from 'react-bootstrap/Image';
 import FlipCard from 'components/FlipCard';
 
 import DirectorSection from 'pages/Home/DirectorSection';
+import InformationSection from 'pages/Home/InformationSection';
 
 import useMedia from 'helpers/hooks/useMedia';
 
 import actorsData, { Actor } from 'assets/data/actors';
 import HairsprayHeroImg from 'assets/img/hairspray-hero.gif';
+import BookNowImg from 'assets/img/buttons/book-now.png';
 
 const actorsDataXs: Actor[][] = _chunk(actorsData, 5);
 const actorsDataMd: Actor[][] = _chunk(actorsData, 2);
@@ -58,6 +60,12 @@ const Home: FC = () => {
             ))}
           </div>
         ))}
+      </div>
+
+      <InformationSection/>
+
+      <div className="d-flex justify-content-center margin-top-40">
+        <Image src={BookNowImg} width={120}/>
       </div>
     </Container>
   );

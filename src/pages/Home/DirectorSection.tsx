@@ -29,7 +29,7 @@ const AngleUpBtn: FC = () => {
   return (
     <StyledAngleUp onClick={handleOnClick} icon={faAngleUp} size="2x"/>
   );
-}
+};
 
 const DirectorBtn: FC = () => {
   const handleOnClick = useAccordionToggle('0', () => {});
@@ -38,15 +38,14 @@ const DirectorBtn: FC = () => {
     <div className="d-flex justify-content-center">
       <Image src={directorBtnImg} onClick={handleOnClick}/>
     </div>
-  );  
+  );
 };
 
 const DirectorSection: FC = () => {
   return (
     <section className="margin-top-30">
       <Accordion>
-        <AccordionToggle eventKey="0" as={DirectorBtn}>
-        </AccordionToggle>
+        <AccordionToggle eventKey="0" as={DirectorBtn}/>
         <AccordionCollapse eventKey="0">
           <StyledAccordionContent>
             <h3 className="font-pixel">
