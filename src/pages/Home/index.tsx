@@ -48,9 +48,9 @@ const Home: FC = () => {
                 key={actor.name}
                 front={<Image src={actor.src} className="mw-100"/>}
                 back={
-                  <div className="d-flex flex-column h-100 justify-content-center align-content-center font-pixel-bold px-1">
+                  <div className="d-flex flex-column h-100 justify-content-center align-content-center font-pixel px-1">
                     <h4>{actor.name}</h4>
-                    <p className={`color-${actor.secondaryColor}`}>as</p>
+                    <p className={`color-${actor.secondaryColor} font-pixel-bold`}>as</p>
                     <h4>{actor.stageName}</h4>
                   </div>
                 }
