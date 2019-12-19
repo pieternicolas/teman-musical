@@ -1,9 +1,20 @@
+import velmaImg from 'assets/img/cast/cast-velma.jpg';
+import seaweedImg from 'assets/img/cast/cast-seaweed.jpg';
+import cornyImg from 'assets/img/cast/cast-corny.jpg';
+import tracyImg from 'assets/img/cast/cast-tracy.jpg';
+import linkImg from 'assets/img/cast/cast-link.jpg';
+import ednaImg from 'assets/img/cast/cast-edna.jpg';
+import pennyImg from 'assets/img/cast/cast-penny.jpg';
+import amberImg from 'assets/img/cast/cast-amber.jpg';
+import motormouthImg from 'assets/img/cast/cast-motormouth.jpg';
+import wilburImg from 'assets/img/cast/cast-wilbur.jpg';
+
 export interface Actor {
   name: string;
   stageName: string;
   bgColor: 'purple' | 'pink' | 'blue' | 'green' | 'orange';
   secondaryColor: 'purple' | 'pink' | 'blue' | 'green' | 'orange';
-  src?: string;
+  src: string;
 };
 
 const actors: Array<Actor> = [
@@ -12,70 +23,70 @@ const actors: Array<Actor> = [
     stageName: 'Velma Von Tussle',
     bgColor: 'purple',
     secondaryColor: 'orange',
-    src: '',
+    src: velmaImg,
   },
   {
     name: 'Damien Jonathans',
     stageName: 'Seaweed J. Stubbs',
     bgColor: 'blue',
     secondaryColor: 'pink',
-    src: '',
+    src: seaweedImg,
   },
   {
     name: 'Gusty Pratama',
     stageName: 'Corny Collins',
     bgColor: 'pink',
     secondaryColor: 'green',
-    src: '',
+    src: cornyImg,
   },
   {
     name: 'Venytha Yoshiantini',
     stageName: 'Tracy Turnblad',
     bgColor: 'pink',
     secondaryColor: 'green',
-    src: '',
+    src: tracyImg,
   },
   {
     name: 'Morgan Oey',
     stageName: 'Link Larkin',
     bgColor: 'orange',
     secondaryColor: 'purple',
-    src: '',
+    src: linkImg,
   },
   {
     name: 'Peter Ong',
     stageName: 'Edna Turnblad',
     bgColor: 'purple',
     secondaryColor: 'orange',
-    src: '',
+    src: ednaImg,
   },
   {
     name: 'Putri Indah Kamila',
     stageName: 'Penny Pingleton',
     bgColor: 'green',
     secondaryColor: 'blue',
-    src: '',
+    src: pennyImg,
   },
   {
     name: 'Andrea Miranda',
     stageName: 'Amber Von Tussle',
     bgColor: 'green',
     secondaryColor: 'blue',
-    src: '',
+    src: amberImg,
   },
   {
     name: 'Tine Simanjuntak',
     stageName: 'Motormouth Maybelle',
     bgColor: 'blue',
     secondaryColor: 'pink',
-    src: '',
+    src: motormouthImg,
   },
   {
     name: 'Renno Krisna',
     stageName: 'Wilbur Turnblad',
     bgColor: 'orange',
     secondaryColor: 'purple',
-    src: '',
+    src: wilburImg,
   },
 ];
 

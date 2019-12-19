@@ -9,9 +9,14 @@ type StyledCardInnerProps = Pick<FlipCardWrapperProps, 'active'>;
 
 const StyledCardWrapper: FC<HTMLAttributes<HTMLDivElement>> = styled.div`
   background-color: transparent;
-  /* width: 300px; */
-  height: 200px;
+  width: 150px;
+  height: 150px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+  @media (min-width: ${props => props.theme.screenMd}) {
+    width: 200px;
+    height: 200px;
+  }
 `;
 
 const StyledCardInner: FC<FlipCardWrapperProps & HTMLAttributes<HTMLDivElement>> = styled.div`
